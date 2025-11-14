@@ -1,0 +1,428 @@
+@charset "utf-8";
+
+/*
+content 内
+======================= */
+
+/* keyVisual */
+.keyVisual {
+  width: 100%;
+  position: relative;
+}
+
+.keyVisual h1 {
+  font-size: var(--base-size_2q);
+  font-weight: 600;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.keyVisual .mainVisual img {
+  width: 100%;
+}
+
+.keyVisual .keyVisual__read {
+  width: 80%;
+  margin: 0 auto;
+  padding: var(--base-size_3) 0;
+}
+
+.keyVisual .keyVisual__read h2 {
+  font-size: var(--base-size_1h);
+  font-weight: 600;
+  margin-bottom: var(--base-size_tq);
+  border-bottom: 1px solid var(--con_ci_color_g2);
+}
+
+.keyVisual .keyVisual__read p {
+  font-size: var(--base-size_1q);
+}
+
+@media (max-width: 767px) {
+  .keyVisual .keyVisual__read {
+    width: 95%;
+    margin: var(--base-size_1tq) auto;
+  }
+}
+
+/* keyVisual */
+
+/* content-wrap */
+.content-wrap {
+  width: 100%;
+}
+
+.content-wrap h2 {
+  font-size: var(--base-size_1q);
+  font-weight: 600;
+  padding-left: var(--base-size_1);
+  margin-bottom: var(--base-size_h);
+  border-left: 4px solid var(--con_ci_color_g2);
+}
+
+.content-wrap h2.content-wrap__center-ttl {
+  font-size: var(--base-size_2);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--base-size_2h);
+  border-left: none;
+}
+
+.content-wrap h3 {
+  font-size: var(--base-size_1);
+  font-weight: 600;
+  margin-bottom: var(--base-size_h);
+}
+
+.content-wrap .content-wrap__main-figure {
+  margin: 0 auto var(--base-size_2h);
+}
+
+/* article */
+.content-wrap .content-wrap__box article h2 {
+  font-size: var(--base-size_1q);
+  font-weight: 600;
+  padding-left: var(--base-size_1);
+  margin-bottom: var(--base-size_h);
+  border-left: 4px solid var(--con_ci_color_g2);
+}
+
+.content-wrap .content-wrap__box article p {
+  padding-left: var(--base-size_q);
+}
+
+/* article */
+
+@media (min-width: 768px) {
+  .content-wrap .content-wrap__box {
+    width: 80%;
+    margin: 0 auto var(--base-size_1tq);
+    display: var(--dsp-flex);
+    justify-content: space-between;
+  }
+
+  .content-wrap .content-wrap__box.non-flex {
+    display: var(--dsp-block);
+  }
+
+  .content-wrap .content-wrap__box figure {
+    width: 50%;
+  }
+
+  .content-wrap .content-wrap__box figure img {
+    width: 100%;
+  }
+
+  .content-wrap .content-wrap__box article {
+    width: 50%;
+    padding: var(--base-size_q) 0 0 var(--base-size_2);
+    position: relative;
+  }
+
+  .content-wrap .content-wrap__box article .button-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .content-wrap .content-wrap__box.even__teleco {
+    flex-direction: row-reverse;
+  }
+
+  .content-wrap .content-wrap__box.even__teleco article {
+    padding: var(--base-size_1) var(--base-size_2) 0 0;
+  }
+
+  .content-wrap .content-wrap__box.even__teleco article .button-box {
+    left: 0;
+    right: initial;
+  }
+
+  .content-wrap .content-wrap__box .comp {
+    width: 47%;
+  }
+
+  .content-wrap .content-wrap__box .comp figure,
+  .content-wrap .content-wrap__box .comp figure img {
+    width: 100%;
+  }
+
+  .content-wrap .content-wrap__box .comp article {
+    width: 100%;
+    padding: var(--base-size_tq) 0 0 0;
+    position: relative;
+  }
+
+  .content-wrap .content-wrap__box .comp article h2 {}
+}
+
+@media (max-width: 767px) {
+  .content-wrap .content-wrap__box {
+    display: var(--dsp-block);
+    margin-bottom: var(--base-size_2);
+  }
+
+  .content-wrap .content-wrap__box figure {
+    width: 100%;
+    margin-bottom: var(--base-size_1);
+  }
+
+  .content-wrap .content-wrap__box figure img {
+    width: 100%;
+  }
+
+  .content-wrap .content-wrap__box article {}
+
+  .content-wrap .content-wrap__box article p {
+    margin-bottom: var(--base-size_2q);
+  }
+
+  .content-wrap .content-wrap__box article a.btn {
+    margin-left: auto;
+  }
+
+  .content-wrap .content-wrap__box .comp {
+    width: 100%;
+  }
+
+  .content-wrap .content-wrap__box .comp figure,
+  .content-wrap .content-wrap__box .comp figure img {
+    width: 100%;
+  }
+
+  .content-wrap .content-wrap__box .comp article {
+    width: 100%;
+    padding: var(--base-size_tq) 0 0 0;
+    position: relative;
+  }
+
+  .content-wrap .content-wrap__box .comp article {
+    width: 100%;
+    padding: var(--base-size_tq) 0 0 0;
+    position: relative;
+  }
+}
+
+/* 複数コラム用 */
+@media (min-width: 768px) {
+  .content-wrap .content-wrap__box--col {
+    width: 100%;
+    margin: 0 auto 0;
+  }
+
+  .content-wrap .content-wrap__box--col .col-wrap {
+    width: 100%;
+    display: var(--dsp-flex);
+    justify-content: space-between;
+  }
+
+  .content-wrap .content-wrap__box--col .col-wrap .col {
+    width: 25%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-wrap .content-wrap__box--col .col-wrap {
+    width: 100%;
+    margin: var(--base-size_tq) auto 0;
+    display: var(--dsp-flex);
+    flex-wrap: wrap;
+  }
+
+  .content-wrap .content-wrap__box--col .col-wrap .col {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.content-wrap .content-wrap__box--col figure,
+.content-wrap .content-wrap__box--col figure img {
+  width: 100%;
+}
+
+.content-wrap .content-wrap__box--col figure {
+  margin-bottom: var(--base-size_tq);
+}
+
+.content-wrap .content-wrap__box--col h2 {
+  font-size: var(--base-size_1q);
+  font-weight: 600;
+}
+
+.content-wrap .content-wrap__box--col .col-wrap .col h3 {
+  font-size: var(--base-size_1);
+  font-weight: 600;
+  margin-bottom: var(--base-size_h);
+}
+
+.content-wrap .content-wrap__box--col .col-wrap .col p {
+  font-size: var(--base-size_1);
+}
+
+/* 複数コラム用 */
+
+/* クリアランス */
+.content-wrap .wrap-clearance {
+  margin: var(--base-size_3) auto;
+}
+
+.content-wrap .wrap-clearance:last-child {
+  margin-bottom: 0;
+}
+
+/* クリアランス */
+
+/* LP Content */
+@media (min-width: 768px) {
+  .content-wrap .content-wrap--lpContent {
+    width: 80%;
+    margin: 0 auto var(--base-size_1tq);
+  }
+
+  .content-wrap--lpContent .content-wrap--lpContent__box {
+    width: 100%;
+    margin: 0 auto var(--base-size_1tq);
+    display: var(--dsp-flex);
+    justify-content: space-between;
+  }
+
+  .content-wrap--lpContent .content-wrap--lpContent__box figure {
+    width: 50%;
+  }
+
+  .content-wrap--lpContent .content-wrap--lpContent__box figure img {
+    width: 100%;
+  }
+
+  .content-wrap--lpContent .content-wrap--lpContent__box article {
+    width: 50%;
+    padding: var(--base-size_q) 0 0 var(--base-size_2);
+    position: relative;
+  }
+
+  .content-wrap--lpContent .content-wrap--lpContent__flow h2 {}
+}
+
+
+/* フロー図 */
+.flow_design01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow_design01 ul {
+  padding: 0;
+}
+
+.flow_design01 li {
+  list-style-type: none;
+}
+
+.flow_design01 dd {
+  margin-left: 0;
+}
+
+.flow01>li {
+  position: relative;
+  list-style: none;
+}
+
+.flow01>li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.flow01>li dl {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid var(--con_ci_color_g2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.flow01>li:not(:last-child) dl::before,
+.flow01>li:not(:last-child) dl::after {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.flow01>li:not(:last-child) dl::before {
+  border-width: 22px;
+  border-top-color: var(--con_ci_color_g2);
+}
+
+.flow01>li:not(:last-child) dl::after {
+  border-width: 20px;
+  border-top-color: var(--con_color_f);
+}
+
+.flow01>li dl dt {
+  font-size: 1.2em;
+  font-weight: 600;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  margin-right: 2vw;
+  text-align: center;
+}
+
+.flow01>li dl dt .icon01 {
+  font-size: 0.6em;
+  color: var(--con_color_f);
+  background: var(--con_ci_color_g2);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.flow01>li dl dd {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+}
+
+@media(max-width: 650px) {
+  .flow01>li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .flow01>li dl {
+    display: block;
+    padding: 10px 15px;
+  }
+
+  .flow01>li dl dt {
+    margin-right: 0;
+  }
+
+  .flow01>li dl dt .icon01 {
+    font-size: .7em;
+  }
+}
+
+/* フロー図 */
+
+
+/* LP Content */
+
+/*
+content 内
+======================= */

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*
+content 内
+======================= */
+
+/* keyVisual */
+.keyVisual {
+  width: 100%;
+  position: relative;
+}
+
+.keyVisual h1 {
+  font-size: var(--base-size_2q);
+  font-weight: 600;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.keyVisual .mainVisual img {
+  width: 100%;
+}
+
+.keyVisual .keyVisual__read {
+  width: 80%;
+  margin: 0 auto;
+  padding: var(--base-size_3) 0;
+}
+
+.keyVisual .keyVisual__read h2 {
+  font-size: var(--base-size_1h);
+  font-weight: 600;
+  margin-bottom: var(--base-size_tq);
+  border-bottom: 1px solid var(--con_ci_color_g2);
+}
+
+.keyVisual .keyVisual__read p {
+  font-size: var(--base-size_1q);
+}
+
+@media (max-width: 767px) {
+  .keyVisual .keyVisual__read {
+    width: 95%;
+    margin: var(--base-size_1tq) auto;
+  }
+}
+
+/* keyVisual */
+
+
+
+
+
+/*
+content 内
+======================= */

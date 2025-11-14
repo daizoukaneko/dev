@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/*
+VARIABLES
+======================= */
+:root {
+  /* Corporate CI COLOR */
+  --con_ci_color_o: #ff6e00;
+  --con_ci_color_g1: #02c751;
+  --con_ci_color_g2: #04a545;
+  --con_ci_color_b1: #85cced;
+  --con_ci_color_b2: #036eb8;
+  /* Corporate CI COLOR */
+
+
+  /* 共通 content color */
+  --con_color_f: #fff;
+  --con_color_b: #000;
+  --con_color_b_111: #111;
+  --con_color_b_222: #222;
+  --con_color_b_333: #333;
+  --con_color_b_666: #666;
+  --con_color_b_777: #777;
+  --con_color_b_888: #888;
+  --con_color_b_999: #999;
+  --con_color_b_ccc: #ccc;
+  --con_color_b_ddd: #ddd;
+  --con_color_b_eee: #eee;
+
+
+  /* rem */
+  --base-size_3: 3rem;
+  /* 48px */
+  --base-size_2tq: 2.75rem;
+  /* 44px */
+  --base-size_2h: 2.5rem;
+  /* 40px */
+  --base-size_2q: 2.25rem;
+  /* 36px */
+  --base-size_2: 2rem;
+  /* 32px */
+  --base-size_1tq: 1.75rem;
+  /* 28px */
+  --base-size_1h: 1.5rem;
+  /* 24px */
+  --base-size_1q: 1.25rem;
+  /* 20px */
+  --base-size_1: 1rem;
+  /* 16px */
+  --base-size_tq: .75rem;
+  /* 12px */
+  --base-size_h: .5rem;
+  /* 8px */
+  --base-size_q: .25rem;
+  /* 4px */
+
+  /* px */
+  --base-size_18p: 18px;
+  --base-size_14p: 14px;
+  --base-size_13p: 13px;
+  --base-size_12p: 12px;
+  --base-size_11p: 11px;
+  --base-size_10p: 10px;
+
+  --dsp-flex: flex;
+  --dsp-block: block;
+  --dsp-inline: inline;
+  --dsp-grid: grid;
+  --dsp-inl_block: inline-block;
+  --dsp-inl_table: table;
+  --dsp-none: none;
+}
+
+/*
+VARIABLES
+======================= */
+
+/*
+COMMON
+======================= */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--con_color_b_333);
+  letter-spacing: 0em;
+  line-height: 1.5;
+}
+
+p,
+pre {
+  line-height: 1.5;
+  font-size: var(--base-size_1);
+  letter-spacing: .01em;
+}
+
+em {
+  font-style: normal;
+}
+
+.lg-en {
+  font-family: "Noto Sans", "Helvetica", "Helvetica Neue", arial;
+}
+
+/*
+COMMON
+======================= */
+
+/*
+GENERAL STYLING
+======================= */
+* {
+  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+  -moz-font-feature-settings: "palt" 1;
+  -ms-font-feature-settings: "palt" 1;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--con_color_b);
+  background-color: var(--con_color_f);
+  font-family:
+    "Hiragino Kaku Gothic Pro",
+    "ヒラギノ角ゴ Pro W3",
+    Meiryo,
+    メイリオ,
+    "游ゴシック Medium",
+    "Yu Gothic Medium",
+    游ゴシック体,
+    "Yu Gothic",
+    YuGothic,
+    "MS PGothic",
+    Osaka,
+    arial,
+    sans-serif;
+  padding: 0;
+  height: 100vh;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: var(--con_color_f);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-wrapper .header-inner {
+  max-width: 1920px;
+  display: var(--dsp-flex);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-size_1h) var(--base-size_2);
+  margin: 0 auto;
+}
+
+.header-wrapper .header-inner nav.global-nav ul {
+  display: var(--dsp-flex);
+  gap: var(--base-size_1h);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+
+/* main */
+main {
+  margin-bottom: 250px;
+  padding-top: 78px;
+}
+
+.efct {
+  opacity: 0.1;
+  transform: translate(0, 50px);
+  transition: all 1000ms;
+}
+
+.efct.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* main */
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: var(--con_ci_color_b1);
+}
+
+.footer-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: var(--base-size_3) var(--base-size_2);
+}
+
+.footer-inner nav.footer-inner__nav {
+  display: var(--dsp-flex);
+  justify-content: space-between;
+  padding-bottom: var(--base-size_2h);
+  /* border-bottom: 1px solid var(--con_color_b_111); */
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category:last-child {
+  border-right: none;
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category h2.category-name {
+  font-size: var(--base-size_1q);
+  font-weight: 600;
+  border-bottom: 1px solid var(--con_color_b_111);
+  margin-bottom: var(--base-size_h);
+  padding-left: var(--base-size_q);
+  padding-bottom: var(--base-size_h);
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category ul {
+  padding: 0 var(--base-size_q);
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category ul li {
+  width: 100%;
+  line-height: 2.0;
+  size: var(--base-size_1h);
+}
+
+.footer-inner nav.footer-inner__nav .footer-inner__nav__category ul li a {
+  text-decoration: underline;
+}
+
+.footer-inner .contact {
+  max-width: 700px;
+  display: var(--dsp-flex);
+  margin: 0 auto;
+  padding-bottom: var(--base-size_2h);
+}
+
+.footer-inner .contact h2 {
+  font-size: var(--base-size_2tq);
+  font-weight: 400;
+  line-height: 1.0;
+  padding-right: var(--base-size_tq);
+  border-right: 3px solid var(--con_color_b_111);
+}
+
+.footer-inner .contact .contact__info {
+  padding: 0 0 0 var(--base-size_1h);
+}
+
+.footer-inner .contact .contact__info p {
+  font-size: var(--base-size_1q);
+}
+
+.footer-inner .contact .contact__info a {
+  width: 300px;
+  font-size: var(--base-size_1q);
+  font-weight: 600;
+  margin-top: var(--base-size_1);
+  padding: var(--base-size_1) var(--base-size_2h);
+  display: var(--dsp-flex);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: linear-gradient(to right, var(--con_ci_color_g1) 0%, var(--con_ci_color_g1) 10%, var(--con_ci_color_g1) 10%, var(--con_ci_color_g2) 70%, var(--con_ci_color_g2) 100%);
+}
+
+.footer-inner .policies {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-inner .policies ul {
+  max-width: 700px;
+  display: var(--dsp-flex);
+  justify-content: center;
+}
+
+.footer-inner .policies ul li {
+  line-height: 1.0;
+}
+
+.footer-inner .policies ul li:first-child::after {
+  content: "／";
+}
+
+p.copyright {
+  text-align: center;
+  font-size: var(--base-size_1);
+  color: var(--con_color_b);
+  padding-top: var(--base-size_1h);
+}
+
+/* footer */
+
+/* parts */
+/* Link Button */
+.button-box {
+  width: 250px;
+  margin: 3rem auto 0;
+}
+
+.button .btn-frame-gradation {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  transform: translatez(0);
+}
+
+.btn-frame-gradation-wrap {
+  border-radius: 50px;
+  border: 3px solid var(--con_ci_color_g2);
+  padding: 10px;
+  text-align: center;
+  font-size: var(--base-size_1q);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.btn-frame-gradation-wrap:hover {
+  transition: all 0.3s ease-out 0.1s;
+}
+
+/* ボーダーカラーに関して、今回は特に変化はさせない */
+.btn-frame-gradation-wrap:hover .gradient {
+  transform: translateX(100%);
+  transition: all 0.8s ease-out 0s;
+}
+
+.btn-frame-gradation-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  transform: translate(-30%);
+  width: 40%;
+  height: 2px;
+  background: var(--con_ci_color_o);
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.btn-frame-gradation-wrap:hover::after {
+  transform: scale(1, 1);
+}
+
+/* Link Button */
+/* parts */
+
+/*
+GENERAL STYLING
+======================= */
